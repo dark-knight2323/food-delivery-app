@@ -9,7 +9,9 @@ const FoodDisplay = ({ category }) => {
       <h2>Top Dishes near you</h2>
       <div className="food-display-list">
         {food_list.map((item, index) => {
-          return <FoodItem key={index} id={item.id} name={item.name} description={item.description} price={item.price} image={item.image} />
+            const conversionRate = 82; // Example conversion rate from USD to INR
+            const priceInINR = `₹ ${item.price * conversionRate}`;
+            return <FoodItem key={index} id={item._id} name={item.name} description={item.description} price={priceInINR} image={item.image} />
         })}
       </div>
     </div>

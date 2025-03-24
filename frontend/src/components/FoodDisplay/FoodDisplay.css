@@ -12,3 +12,18 @@
     gap: 30px;
     row-gap: 50px;
 }
+.food-display-list::hover{
+    box-shadow: -10px 10px 15px rgba(0, 0, 0, 0.2);
+}
+.food-item-img-container{
+    position: relative;
+}
+
+.food-item-img-container .add{
+    position:absolute;
+    width: 35px;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+}
