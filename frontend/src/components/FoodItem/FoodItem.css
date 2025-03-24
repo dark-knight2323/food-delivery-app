@@ -74,3 +74,9 @@
     width: 30px;
     cursor: pointer;
 }
+
+.food-item-image-container img:hover{
+    transform: scale(1.05);
+    box-shadow: #00000015 0px 0px 10px;
+    transition: 0.5s;
+}
